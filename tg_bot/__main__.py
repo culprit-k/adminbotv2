@@ -23,7 +23,7 @@ PM_START_TEXT = """
 
 എന്നെ നിർമ്മിച്ചിരിക്കുന്നത് python3 യിൽ python-telegram-bot ലൈബ്രറി ഉപയോഗിച്ചാണ്. ഞാൻ പൂർണ്ണമായിട്ടും ഓപ്പൺസോഴ്സ്ഡ് ആണ്. എന്റെ കോഡ് നിങ്ങൾക്ക് [ഇവിടെ](https://github.com/culprit-k)
 
- FUCK OFF you are not allowed only for @Movie_House_1 BOT MAIN ADMIN @shonsajith @abhijith876
+ FUCK OFF you are not allowed only for [MOVIE HOUSE}(https://t.me/Movie_House_1) BOT MAIN ADMINS @shonsajith , @abhijith876
   
 
 
