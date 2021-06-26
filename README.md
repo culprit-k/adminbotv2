@@ -5,7 +5,7 @@ Originally a simple group management bot with multiple admin features, it has ev
 simple to use.
 
 To deploy me on heroku, use below button:
-[![Deploy](https://dashboard.heroku.com/new?template=https%3A%2F%2Fgithub.com%2Fculprit-k%2Fadminbotv2)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://dashboard.heroku.com/new?template=https%3A%2F%2Fgithub.com%2Fculprit-k%2Fadminbotv2)
 
 ## Starting the bot.
 
