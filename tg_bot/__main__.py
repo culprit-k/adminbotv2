@@ -143,7 +143,7 @@ def start(bot: Bot, update: Update, args: List[str]):
 
                 parse_mode=ParseMode.MARKDOWN, reply_markup=InlineKeyboardMarkup(
                     [[InlineKeyboardButton(text="GROUP", url="https://t.me/Movie_House_1"), InlineKeyboardButton(text="CHANNEL", url="https://t.me/movie_house_5")],
-                     [InlineKeyboardButton(text="SUPPORT CONTACT", url="https://t.me/Movie_House_1")] ]]))
+                     [InlineKeyboardButton(text="SUPPORT CONTACT", url="https://t.me/Movie_House_1")] 
 
     else:
         update.effective_message.reply_text("ചത്തിട്ടില്ലാ...")
