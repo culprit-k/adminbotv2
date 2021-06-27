@@ -19,11 +19,8 @@ from tg_bot.modules.helper_funcs.misc import paginate_modules
 
 PM_START_TEXT = """
 
-ഹായ് {}, എന്റെ പേര് {}! ഞാൻ [ഇദ്ദേഹം](tg://user?id={}) നോക്കി നടത്തുന്ന ഒരു അടിപൊളി അഡ്മിൻ ബോട്ടാണ്.
-
-എന്നെ നിർമ്മിച്ചിരിക്കുന്നത് python3 യിൽ python-telegram-bot ലൈബ്രറി ഉപയോഗിച്ചാണ്. ഞാൻ പൂർണ്ണമായിട്ടും ഓപ്പൺസോഴ്സ്ഡ് ആണ്. എന്റെ കോഡ് നിങ്ങൾക്ക് [ഇവിടെ](https://github.com/culprit-k)
-
- FUCK OFF you are not allowed only for [MOVIE HOUSE](https://t.me/Movie_House_1) BOT MAIN ADMINS @shonsajith , @abhijith876
+ഹായ് {},[Forwarded from Deleted Account]
+ഞാൻ ഒരു ഗ്രൂപ്പ് മാനേജർ ബോട്ട് ആണ് പക്ഷെ വെറുതെ സമയം കളയണ്ട എന്നെ ™MH Entertainment ഗ്രൂപ്പിൽ മാത്രമേ ഉപയോഗിക്കാൻ കഴിയൂ
   
 
 
@@ -146,9 +143,8 @@ def start(bot: Bot, update: Update, args: List[str]):
                 PM_START_TEXT.format(escape_markdown(first_name), escape_markdown(bot.first_name), OWNER_ID),
 
                 parse_mode=ParseMode.MARKDOWN, reply_markup=InlineKeyboardMarkup(
-                    [[InlineKeyboardButton(text="🎉 Add me to your group", url="t.me/{}?startgroup=true".format(bot.username)),  InlineKeyboardButton(text="🤖 Make Own Admin Bot", url="https://github.com/culprit-k")],
-                     [InlineKeyboardButton(text="👥 Support Group", url="https://t.me/Movie_House_1"), InlineKeyboardButton(text="🔔 Update Channel", url="https://t.me/movie_house_5")],
-                     [InlineKeyboardButton(text="🎬 Youtube Channel", url="https://www.youtube.com/channel/UCTJ7s13E9QE30oSezniexcw"), InlineKeyboardButton(text="🛠 Help", url="https://t.me/{}?start=help".format(bot.username)) ]]))
+                    [[InlineKeyboardButton(text="GROUP", url="https://t.me/Movie_House_1"), InlineKeyboardButton(text="CHANNEL", url="https://t.me/movie_house_5")],
+                     [InlineKeyboardButton(text="SUPPORT CONTACT", url="https://t.me/Movie_House_1")] ]]))
 
     else:
         update.effective_message.reply_text("ചത്തിട്ടില്ലാ...")
