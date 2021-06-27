@@ -136,15 +136,7 @@ def start(bot: Bot, update: Update, args: List[str]):
             elif args[0][1:].isdigit() and "rules" in IMPORTED:
                 IMPORTED["rules"].send_rules(update, args[0], from_pm=True)
 
-        else:
-            first_name = update.effective_user.first_name
-            update.effective_message.reply_text(
-                PM_START_TEXT.format(escape_markdown(first_name), escape_markdown(bot.first_name), OWNER_ID),
-
-                parse_mode=ParseMode.MARKDOWN, reply_markup=InlineKeyboardMarkup(
-                    [[InlineKeyboardButton(text="GROUP", url="https://t.me/Movie_House_1"), InlineKeyboardButton(text="CHANNEL", url="https://t.me/movie_house_5")],
-                     [InlineKeyboardButton(text="SUPPORT CONTACT", url="https://t.me/Movie_House_1")] 
-
+        
     else:
         update.effective_message.reply_text("ചത്തിട്ടില്ലാ...")
 
