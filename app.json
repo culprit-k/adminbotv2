@@ -1,7 +1,7 @@
 {
   "name": "admimbotv2",
   "description": "Telegram's sassiest group manager. Modular Telegram group management bot!",
-  "logo": "https://telegra.ph/MOVIE-HOUSE-ENTERTAINM",
+  "logo": "https://telegra.ph/file/5d5453f2b2d05d78d7c43.jpg",
   "keywords": [
     "telegram",
     "best",
@@ -54,7 +54,7 @@
     },
     "DONATION_LINK": {
       "description": "Optional: link where you would like to receive donations.",
-      "value": "https://t.me/Movie_House_1"
+      "value": "https://t.me/Movie_House_Group_2"
     },
     "PORT": {
       "description": "Port to use for your webhooks",
