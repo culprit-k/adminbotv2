@@ -19,7 +19,7 @@ from tg_bot.modules.helper_funcs.misc import paginate_modules
 
 PM_START_TEXT = """
 
-ഹായ് {},ഞാൻ ഒരു ഗ്രൂപ്പ് മാനേജർ ബോട്ട് ആണ് പക്ഷെ വെറുതെ സമയം കളയണ്ട എന്നെ ™ мονιє нουѕє ഗ്രൂപ്പിൽ മാത്രമേ ഉപയോഗിക്കാൻ കഴിയൂ
+sᴏʀʀʏ,ᴛʜɪs ʙᴏᴛ ᴄᴀɴ ᴏɴʟʏ ʙᴇ ᴜsᴇᴅ ɪɴ @Movie_House_Group_2.
   
 
 
@@ -141,11 +141,7 @@ def start(bot: Bot, update: Update, args: List[str]):
             update.effective_message.reply_text(
                 PM_START_TEXT.format(escape_markdown(first_name), escape_markdown(bot.first_name), OWNER_ID),
 
-                parse_mode=ParseMode.MARKDOWN, reply_markup=InlineKeyboardMarkup(
-                    [[InlineKeyboardButton(text="⭕GROUP 1⭕", url="https://t.me/Movie_House_1"),  InlineKeyboardButton(text="⭕GROUP 2⭕", url="https://t.me/Movie_House_4")],
-                     [InlineKeyboardButton(text="⭕️Gᴇᴛ Oᴜʀ Aʟʟ Cʜᴀɴɴᴇʟ Lɪɴᴋs⭕️", url="https://t.me/joinchat/UWxtfOoIUCZOkURm")], 
-                     [InlineKeyboardButton(text="📀Gᴇᴛ Oᴛᴛ & Dᴠᴅ Uᴘᴅᴀᴛᴇs📀", url="https://t.me/joinchat/bTnIluCefhkxNzVl"), InlineKeyboardButton(text="🛠 Help", url="https://t.me/{}?start=help".format(bot.username)) ]]))
-
+               
     else:
         update.effective_message.reply_text("ചത്തിട്ടില്ലാ...")
 
