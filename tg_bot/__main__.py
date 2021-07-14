@@ -18,7 +18,7 @@ from tg_bot.modules.helper_funcs.chat_status import is_user_admin
 from tg_bot.modules.helper_funcs.misc import paginate_modules
 
 PM_START_TEXT = """
-sᴏʀʀʏ,ᴛʜɪs ʙᴏᴛ ᴄᴀɴ ᴏɴʟʏ ʙᴇ ᴜsᴇᴅ ɪɴ @Movie_House_Group_2.
+sᴏʀʀʏ,ᴛʜɪs ʙᴏᴛ ᴄᴀɴ ᴏɴʟʏ ʙᴇ ᴜsᴇᴅ ɪɴ @Movie_House_Group_2
 """
 
 HELP_STRINGS = """
