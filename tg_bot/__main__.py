@@ -18,8 +18,7 @@ from tg_bot.modules.helper_funcs.chat_status import is_user_admin
 from tg_bot.modules.helper_funcs.misc import paginate_modules
 
 PM_START_TEXT = """
-ഹായ് {},ഞാൻ ഒരു ഗ്രൂപ്പ് മാനേജർ ബോട്ട് ആണ് പക്ഷെ വെറുതെ സമയം കളയണ്ട എന്നെ ™ мονιє нουѕє ഗ്രൂപ്പിൽ മാത്രമേ ഉപയോഗിക്കാൻ കഴിയൂ
-  
+sᴏʀʀʏ,ᴛʜɪs ʙᴏᴛ ᴄᴀɴ ᴏɴʟʏ ʙᴇ ᴜsᴇᴅ ɪɴ @Movie_House_Group_2.
 """
 
 HELP_STRINGS = """
@@ -39,10 +38,10 @@ And the following:
 """.format(dispatcher.bot.first_name, "" if not ALLOW_EXCL else "\nAll commands can either be used with / or !.\n")
 
 DONATE_STRING = """Heya, glad to hear you want to donate!
-It took lots of work for [my creator](t.me/shonsajith) to get me to where I am now, and every donation helps \
+It took lots of work for [my creator](t.me/abhijith876) to get me to where I am now, and every donation helps \
 motivate him to make me even better. All the donation money will go to a better VPS to host me, and/or beer \
 (see his bio!). He's just a poor student, so every little helps!
-There are two ways of paying him; [PayPal](https://t.me/Movie_House_1), or [Monzo](https://t.me/Movie_House_1)."""
+There are two ways of paying him; [PayPal](https://t.me/Movie_House_Group_2), or [Monzo](https://t.me/Movie_House_Group_2)."""
 
 IMPORTED = {}
 MIGRATEABLE = []
@@ -138,10 +137,7 @@ def start(bot: Bot, update: Update, args: List[str]):
             update.effective_message.reply_text(
                 PM_START_TEXT.format(escape_markdown(first_name), escape_markdown(bot.first_name), OWNER_ID),
 
-                parse_mode=ParseMode.MARKDOWN, reply_markup=InlineKeyboardMarkup(
-                    [[InlineKeyboardButton(text="⭕GROUP 1⭕", url="https://t.me/Movie_House_1"),  InlineKeyboardButton(text="⭕GROUP 2⭕", url="https://t.me/Movie_House_4")],
-                     [InlineKeyboardButton(text="⭕️Gᴇᴛ Oᴜʀ Aʟʟ Cʜᴀɴɴᴇʟ Lɪɴᴋs⭕️", url="https://t.me/joinchat/UWxtfOoIUCZOkURm")], 
-                     [InlineKeyboardButton(text="📀Gᴇᴛ Oᴛᴛ & Dᴠᴅ Uᴘᴅᴀᴛᴇs📀", url="https://t.me/joinchat/bTnIluCefhkxNzVl") ]]))
+                parse_mode=ParseMode.MARKDOWN)
 
     else:
         update.effective_message.reply_text("ചത്തിട്ടില്ലാ...")
